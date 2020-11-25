@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
+      rel="stylesheet"
+    />
+
+    
+  </head>
+  <body>
+    <a href="#">
+      <h2 style="font-family: 'Sonsie One', cursive;">Grid of Boxes</h2>
+    </a>
+    <p style="color: white;">Float boxes side by side:</p>
+    
+    <img id="image_test" src="https://www.hdwallpapers.in/download/pink_cosmos_flowers-1680x1050.jpg"
+    
+    <div class="clearfix">
+      <div class="box redbox threecol" style="color: grey;">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box orangebox threecol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box redbox threecol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box pinkbox twocol" style="color: blue;">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box greenbox twocol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box bluebox onecol">
+        <p>Some text inside the box.</p>
+      </div>
+    
+
+    <p>
+      Note that we also use the clearfix hack to take care of the layout flow,
+      and that add the box-sizing property to make sure that the box doesn't
+      break due to extra padding. Try to remove this code to see the effect.
+    </p>
+  </body>
+</html>
+
