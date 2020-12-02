@@ -3,103 +3,118 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background-image: url(http://www.theflowersavenue.com/gallery/violets/violets_4.jpg)
 }
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: #EFE185;
+  font-size:1200px;
+}
+body, html {
+    height: 100%;
 }
 
-* {
-  box-sizing: border-box;
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 10%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.box {
-  float: left;
-  padding: 30px;
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: top;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  height: 200px;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+h2 {
+  font-style:bold;
+  color:#861852;
+  font-size:26px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 4px;
+  text-align: left;    
 }
 
-.redbox{
-  background-color: red;
-  font-type: Helvetica;
-  
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.bluebox{
-  background-color: blue;
-  color: white
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.pinkbox{
-  background-color: pink;
-  padding: 50px;
-  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.greenbox{
-  background-color: green;
-  color: pink
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.orangebox{
-  background-color: orange;
-  color:black
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
-.onecol{
-  width: 100%;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-.twocol{
-  width: 50%;
-  border: 2px solid white;
+a:link {
+  text-decoration: none;
 }
 
-.threecol{
-  width: 33.33%;
+a:visited {
+  text-decoration: none;
 }
 
-
-* {
-  box-sizing:border-box;
+a:hover {
+  text-decoration: underline;
 }
 
-.left {
-  background-color:#2196F3;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
+a:active {
+  text-decoration: underline;
 }
-
-.main {
-  background-color:#f1f1f1;
-  padding:20px;
-  float:left;
-  width:60%; /* The width is 60%, by default */
-}
-
-.right {
-  background-color:#4CAF50;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
-  .onecol, .twocol, .threecol {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-
-
-
