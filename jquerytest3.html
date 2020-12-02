@@ -14,13 +14,35 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <h1>Hi there!
-      just click here <a href="idontknow.html">i don't know</a>!
-       just click here <a href="domtest.html">DOMTEST</a>!
-      just click here <a href="jquerytest.html">JQUERY TEST</a>
-      just click here <a href="jquerytest2.html"> JQUERY TEST PART 2</a>
-      clik here <a href="jquerytest3.html"> JQUERY TEST PART 3</a>
-      </h1>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+  });
+});
+</script>
+<style>
+.blue {
+  color: indigo;
+  background-color: white;
+  font-size: xx-large;
+  font-style: italic;
+}
+</style>
+
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Toggle class</button>
+
+</body>
+
    
    
 

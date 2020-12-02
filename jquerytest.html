@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello!</title>
+    <title>Hello! This is jquery</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").css({"background-color": "pink", "font-size": "100%" , "font-family" : "sans serif"});
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is to tryout the changing box colour thingie</h2>
+
+<p style="background-color:#C0CDF7">do you wish.</p>
+<p style="background-color:#723286">do you wish.</p>
+<p style="background-color:#863246">do you wish.</p>
+
+<p>This is a paragraph.</p>
+
+<button>PRESS HERE </button>
+
+</body>
+</html>
   <body>
-    <h1>Hi there!
-      just click here <a href="idontknow.html">i don't know</a>!
-       just click here <a href="domtest.html">DOMTEST</a>!
-      just click here <a href="jquerytest.html">JQUERY TEST</a>
-      just click here <a href="jquerytest2.html"> JQUERY TEST PART 2</a>
-      clik here <a href="jquerytest3.html"> JQUERY TEST PART 3</a>
-      </h1>
-   
-   
+    <h1>Hi there!</h1>
+    
+    
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
   </body>
-</html>
+
