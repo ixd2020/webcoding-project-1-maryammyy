@@ -12,8 +12,19 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style> 
-input[type=text] {
+   
+</head>
+<body>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+<header> <img width="100" height="100" src="https://cdn.glitch.com/39934e92-0222-4dc5-8095-d2d6a7919a2d%2Fpainting.svg?v=1608053087492" alt=""></header>
+</body>
+
+<style>
+   
+  
+  input[type=text] {
   width: 130px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -31,17 +42,8 @@ input[type=text] {
 input[type=text]:focus {
   width: 100%;
 }
-</style>
-</head>
-<body>
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
-
-</body>
-
-<style>
-      body {
+  
+  body {
         font-family: "Lato", sans-serif;
       }
 
@@ -194,16 +196,23 @@ input[type=text]:focus {
   /* unvisited link */
   a:link {
     color: white;
+     active {
+  background-color: indigo;
+}
   }
 
   /* mouse over link */
   a:hover {
     color: white;
-  }
+    
+  }active {
+  background-color: indigo;
 
   /* selected link */
   a:active {
     color: white;
+    active {
+  background-color: indigo;
   }
 </style>
   <style>
@@ -308,6 +317,7 @@ img {vertical-align: middle;}
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
+      <a href="/index.html">Homepage</a>
       <a href="/elizabethbio.html">Murray's Story</a>
       <a href="/gallery.html">Gallery</a>
       <a href="/howtowatercolour.html">Basics of Watercolour</a>
@@ -426,32 +436,47 @@ img {vertical-align: middle;}
         >
       </p>
     </div>
-  <style>
-.button {
-font-style: Verdana;
-
-  border-radius:10px;
-  border-color:#E5BFDA;
   
-  padding:100px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 50px;
-  margin: 100px 100px;
-  cursor: pointer;
+  <div class="header 2">
+    
+  </div>
+  <style>.header 2 {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
-
-.button {border-radius: 180
-px;}
-.button5 {border-radius: 100%;}
-</style>
-
-<body>
-
-
-<button class="button button"><a href="/events.html">Events</a></button>
-
+    </style>
+  <div class="w3-container w3-pale-red">
+  <h2><a href="events.html">
+        Events</a
+      >
+    </h2>
+  
+  <p>
+    
+    Catch up on the latest updates!
+    </p></div>
+  
+<br>
+  <br>
+  
+  <div class="w3-container w3-pale-red">
+  <h2><a href="signup.html">
+        Sign Up</a
+      >
+    </h2>
+  
+  <p>
+    
+    Want to know what's new? Sign Up to our Newsletter!
+    </p></div>
+  
+  <footer>
+  <p>&copy; 2020 Maryam Tayeb<br>
+   	</p>
+</footer>
 
 </body>
 
@@ -475,7 +500,7 @@ px;}
       document.getElementById(tabName).style.display = "block";
     }
   </script>
-</body>
+
 
 
 

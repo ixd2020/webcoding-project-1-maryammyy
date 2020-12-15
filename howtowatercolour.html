@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en"></html>
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Hello!</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-      <html>
         <title>W3.CSS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="stylesheet"
           href="https://www.w3schools.com/w3css/4/w3.css"
         />
-        <html>
+      
           <head>
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
 
-            <style>
-              input[type="text"] {
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/style.css" />
+
+        <!-- import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+      <script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p2").hide();
+  });
+  $("#show").click(function(){
+    $("p2").show();
+  });
+});
+</script>
+     
+          
+          </head>
+          <body>
+            <form>
+              <input type="text" name="search" placeholder="Search.." />
+            </form>
+          </body>
+        
+        <style>
+              
+                  input[type="text"] {
                 width: 130px;
                 box-sizing: border-box;
                 border: 2px solid #ccc;
@@ -42,16 +75,13 @@
               input[type="text"]:focus {
                 width: 100%;
               }
-            </style>
-          </head>
-          <body>
-            <form>
-              <input type="text" name="search" placeholder="Search.." />
-            </form>
-          </body>
-        </html>
-
-        <style>
+            
+        body {
+  background-color: #474e5d;
+        
+        
+        
+        
           body {
             font-family: "Lato", sans-serif;
           }
@@ -105,14 +135,7 @@
           }
         </style>
 
-        <title>Hello!</title>
-
-        <!-- import the webpage's stylesheet -->
-        <link rel="stylesheet" href="/style.css" />
-
-        <!-- import the webpage's javascript file -->
-        <script src="/script.js" defer></script>
-
+      
         <style>
           < body,
           html {
@@ -172,7 +195,94 @@
             margin: 50px auto 0 auto;
             width: 80%;
           }
-        </style>
+     
+      
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+#more {display: none;}
+          
+          #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #E5DDBF;
+  border: solid 2px #E5DDBF;
+   font-family:Verdana, sans-serif;
+  
+  font-size:90px;
+               font-style:bold;
+                 color:#861852;
+}
+
+#panel {
+  padding: 100px;
+  display: none;
+}
+</style>
+        
+        
         <body>
           <div class="hero-image">
             <div class="hero-text">
@@ -188,11 +298,11 @@
         </body>
         <body>
           <div class="w3-container">
-            <div class="w3-panel w3-light-grey">
+            
               <span style="font-size:150px;line-height:0.6em;opacity:0.2"
                 >❝</span
               >
-              <p class="w3-xlarge" style="margin-top:-40px">
+              <p class="w3-xxlarge" style="margin-top:-40px;font-style: Helvetica; color: white;font-size: 130px">
                 <i
                   >Murray created around 85 pieces that can be divided into
                   three groups: portraits, which were the highlights of her
@@ -200,13 +310,14 @@
                 >
               </p>
             </div>
-          </div>
+         
 
           <body>
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 >&times;</a
               >
+              <a href="/index.html">Homepage</a>
               <a href="/elizabethbio.html">Murray's Story</a>
               <a href="/gallery.html">Gallery</a>
               <a href="/howtowatercolour.html">Basics of Watercolour</a>
@@ -221,6 +332,7 @@
                 >&#9776;
               </span>
               <div class="w3-panel w3-leftbar w3-sand"></div>
+            
 
               <script>
                 function openNav() {
@@ -235,195 +347,104 @@
               </script>
 
           
-                <style>
-                  * {
-                    box-sizing: border-box;
-                  }
-
-                  body {
-                    margin: 0;
-                    font-family: Arial, Helvetica, sans-serif;
-                  }
-
-                  .container {
-                    padding: 64px;
-                  }
-
-                  .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                  }
-
-                  .column-66 {
-                    float: left;
-                    width: 66.66666%;
-                    padding: 20px;
-                  }
-
-                  .column-33 {
-                    float: left;
-                    width: 33.33333%;
-                    padding: 20px;
-                  }
-
-                  .large-font {
-                    font-size: 48px;
-                  }
-
-                  .xlarge-font {
-                    font-size: 64px;
-                  }
-
-                  .button {
-                    border: none;
-                    color: white;
-                    padding: 14px 28px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    background-color: #4CAF50;
-                  }
-
-                  img {
-                    display: block;
-                    height: auto;
-                    max-width: 100%;
-                  }
-
-                  @media screen and (max-width: 1000px) {
-                    .column-66,
-                    .column-33 {
-                      width: 100%;
-                      text-align: center;
-                    }
-                    img {
-                      margin: auto;
-                    }
-                  }
-                </style>
-           
-              <body>
-                <!-- The App Section -->
                 <div class="container">
-                  <div class="row">
-                    <div class="column-66">
-                      <h1 class="xlarge-font"><b>Step 1: Watercolours</b></h1>
-                      <h1 class="large-font" style="color:#DCA5B1;">
-                        <b>First things first, get a good watercolour set.</b>
-                      </h1>
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Step 1: Watercolours</b></h1>
+      <h1 class="large-font" style="color:#C6BFE5;"><b>What's so special about them?</b></h1>
+      <p><span style="font-size:36px">Watercolors come in three different grades: </span> children’s, student grade, and artist grade. The best watercolors for beginners are student grade. 
+        Having a good watercolour set really makes a difference in your work.</p>
 
-                      <p>
-                        <span style="font-size:24px"
-                          >Watercolors come in three different grades:</span
-                        >
-                        children’s, student grade, and artist grade.The best watercolors for beginners are student
-                        grade. A good example is this Winson and Newton set, as it has
-                        24 colors — which means you won’t need to mix your own
-                        colors as much. You really just need one good palette,
-                        and you’re good to go!
-                      </p>
-                    </div>
-                    <div class="column-33">
-                      <img
-                        src="https://i2.wp.com/thepostmansknock.com/wp-content/uploads/2020/08/2winsor_newton_watercolors-6-of-15.jpg?w=1440&ssl=1"
-                        width="335"
-                        height="471"
-                      />
-                    </div>
-                  </div>
-                </div>
+    </div>
+    <div class="column-33">
+        <img src="https://i2.wp.com/thepostmansknock.com/wp-content/uploads/2020/08/2winsor_newton_watercolors-6-of-15.jpg?w=1440&ssl=1" width="335" height="471">
+    </div>
+  </div>
+</div>
 
-                <!-- Clarity Section -->
-                <div class="container" style="background-color:#f1f1f1">
-                  <div class="row">
-                    <div class="column-33">
-                      <img
-                        src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2015/05/1watercolors_for_beginners-5-of-17.jpg?w=1440&ssl=1"
-                        alt="App"
-                        width="335"
-                        height="471"
-                      />
-                    </div>
-                    <div class="column-66">
-                      <h1 class="xlarge-font"><b>Step 2: Brushes</b></h1>
-                      <h1 class="large-font" style="color:#A5BEDC;">
-                        <b
-                          >Once you’ve got your watercolor palette, it’s time to
-                          think about brushes.</b
-                        >
-                      </h1>
-                      <p>
-                        <span style="font-size:24px"
-                          >Brush preferences will vary by artist,
-                        </span>
-                       some prefer thin brushes while others like thick brushes that can cover most of the canvas easily.
-                        You can start off with a bunch of both kinds to tryout, but do remember to get brushes of quality. 
-                        <br>Press here
-                        to see a few examples<span id="dots">...</span><span id="more">  <br>
-                        -Winsor & Newton Cotman Series 111 Round size 0000 (item number 65749)<br>
-                        -Grumbacher Goldenedge 4620 Round size 000<br>
-                        -Robert Simmons S85 size 5/0 (item number 56403)<br>
-                        -Grumbacher Goldenedge 4620 Round size 0 (item number 06777-1000)<br>
-                        -Grumbacher Goldenedge 4620 Round size 3<br>
-                        
-                      </span>
-                      </p>
-                      
-                      
-                      
-                     
-<script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+<!-- Clarity Section -->
+<div class="container" >
+  <div class="row">
+    <div class="column-33">
+      <img src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2015/05/1watercolors_for_beginners-5-of-17.jpg?w=1440&ssl=1" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Step 2: Brushes</b></h1>
+      <h1 class="large-font" style="color:#D9BFE5;"><b>Like how a wizard chooses his wand, an artist with their brush</b></h1>
+      <p><span style="font-size:24px">One must always be careful when </span>choosing their brush. Always be open to many varieties at first, after time
+        you'll find your preference. Here are a few ideas on what brushes is of great quality.</p>
+     <br>
+      <p2>-Winsor & Newton Cotman Series 111 Round size 0000 (item number 65749)<br>
+-Grumbacher Goldenedge 4620 Round size 000<br>
+-Robert Simmons S85 size 5/0 (item number 56403)<br>
+-Grumbacher Goldenedge 4620 Round size 0 (item number 06777-1000)<br>
+-Grumbacher Goldenedge 4620 Round size 3</p2>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
-                    </div>
-                  </div>
-                </div>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
 
-                <!-- The App Section -->
-                <div class="container">
-                  <div class="row">
-                    <div class="column-66">
-                      <h1 class="xlarge-font"><b>Step 3:Paper Type</b></h1>
-                      <h1 class="large-font" style="color:#D0A5DC;">
-                        <b>Watercolour Paper is your safest bet!
-</b>
-                      </h1>
-                      <p>
-                        <span style="font-size:36px"
-                          >Watercolor requires special paper because of absorbency.</span
-                        >
-                       Watercolor paper essentially lets the paint sit on top of the paper until it dries rather than allowing the paint to spiderweb out. If you try to paint on, say, standard 20# printer paper, the watercolor will bleed at the edges because the paper is super absorbent. (Note that you don’t have to paint on watercolor paper!)
-                      </p>
-                    
-                    </div>
-                    <div class="column-33">
-                      <img
-                        src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2015/05/1watercolors_for_beginners-6-of-17.jpg?w=1440&ssl=1"
-                        width="335"
-                        height="471"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </body>
-            </div>
-          </body>
-        </body>
-      </html>
-    </head>
-  </html>
-</head>
+
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Step 3: Watercolour Paper</b></h1>
+      <h1 class="large-font" style="#BFD1E5;"><b>Why buy it?</b></h1>
+      <p><span style="font-size:36px">Watercolour paper is essential</span>for a good experience with watercolours. Only special paper like Watercolour 
+        Paper allows the colours to flow beautifully, giving a satisfying effect.</p>
+      
+    </div>
+    <div class="column-33">
+        <img src="https://i0.wp.com/thepostmansknock.com/wp-content/uploads/2015/05/1watercolors_for_beginners-6-of-17.jpg?w=1440&ssl=1" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+    </div></div></div></div>
+              
+                
+               <br><br>
+<style> 
+
+</style>
+
+<body>
+ 
+<div id="flip">Click Here to Continue</div>
+<div id="panel">All Set? Here's a few videos to kickstart<br>
+  your Watercolour Journey!</div>
+                
+                
+                
+                
+                
+              <div class="container"> 
+  
+
+
+           <iframe class="responsive-iframe" width="900" height="900" src="https://www.youtube.com/embed/HWqDcYY3hQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>  
+  
+  <div class="container"> 
+  
+
+
+           <iframe class="responsive-iframe" width="900" height="900"  src="https://www.youtube.com/embed/ZkECC3504mE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div> 
+  
+  <div class="container"> 
+  
+
+
+           <iframe class="responsive-iframe" width="900" height="900"  src="https://www.youtube.com/embed/ZkECC3504mE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div> 
+  
+  
+ <div class="container"> 
+  
+
+
+           <iframe class="responsive-iframe" width="900" height="900"  src="https://www.youtube.com/embed/dqlIBO57MSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+             </div> 
+              </body></body></body></head></head>

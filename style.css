@@ -42,7 +42,8 @@ body, html {
 h2 {
   font-style:bold;
   color:#861852;
-  font-size:26px;
+  font-size:60px;
+  text-align: center;
 }
 table, th, td {
   border: 1px solid black;
@@ -118,3 +119,8 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
+<span style="font-size:150px;line-height:0.6em;opacity:0.2"
+                >❝</span
+              >
+              <p class="w3-xxlarge" style="margin-top:-40px;font-style: Helvetica; color: white;">
