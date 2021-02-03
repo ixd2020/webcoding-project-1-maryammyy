@@ -1,0 +1,60 @@
+.aboutpage{
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+    padding:17px;
+      margin:auto;
+
+
+
+}
+
+h1 {
+    color: black;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: left;
+  padding:15px;
+}
+
+p {
+  font-weight: regular; 
+  font-size: 20px;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  color:gray;
+}
+
+table {
+  font-family: arial, sans-serif;
+  color:gray;
+  border-collapse: collapse;
+  width: 46%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.div1{
+  float:left;
+  width:100%;
+}
+
+.div2{
+float:left;
+  width:33.33%;
+  padding:15px;}
+
+.div3{
+  float:right;
+  width:33.33%;
+  padding:15px;
+}
+
+.div4{
+  float:right;
+  width:33.33%;
+  padding:15px;
+}
+container{
+  width:100%;
+}
