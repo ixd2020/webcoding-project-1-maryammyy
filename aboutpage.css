@@ -1,3 +1,14 @@
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+
+
+
+
 .aboutpage{
   display:block;
   margin-right:auto;
@@ -46,13 +57,13 @@ float:left;
 
 .div3{
   float:right;
-  width:33.33%;
+  width:20%;
   padding:15px;
 }
 
 .div4{
   float:right;
-  width:33.33%;
+  width:10%;
   padding:15px;
 }
 container{
